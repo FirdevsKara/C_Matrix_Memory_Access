@@ -5,20 +5,24 @@ Bu proje, C programlama dilinde iki boyutlu bir matrisin elemanlarına klasik A[
 
 Projenin temel odağı, yüksek seviyeli dil soyutlamalarını bir kenara bırakarak bilgisayarın bellekte verileri satır-öncelikli (row-major) düzende nasıl sakladığını anlamaktır.
 
+...
+
 📌 Projenin Amacı
 
 Bilgisayar belleği (RAM), doğrusal (linear) bir yapıdadır.
 Bu projede, iki boyutlu bir veri yapısının bellekteki fiziksel yerleşimi:
 
-Matrisin başlangıç adresi (base address)
+ * Matrisin başlangıç adresi (base address)
 
-Satır ve sütun sayısı
+ * Satır ve sütun sayısı
 
-Eleman boyutu (byte cinsinden)
+ * Eleman boyutu (byte cinsinden)
 
-(i, j) indisleri
+ * (i, j) indisleri
 
 kullanılarak pointer aritmetiği ile hesaplanmıştır.
+
+...
 
 🧮 Adres Hesaplama (Row-Major Order)
 
@@ -28,53 +32,60 @@ Adres = Base Address + ((i × Sütun Sayısı) + j) × Eleman Boyutu
 
 Açıklamalar:
 
-Base Address: Matrisin bellekteki ilk elemanı [0][0]
+* Base Address: Matrisin bellekteki ilk elemanı [0][0]
 
-i: Satır indeksi
+* i: Satır indeksi
 
-j: Sütun indeksi
+* j: Sütun indeksi
 
-Sütun Sayısı: Bir satırda bulunan toplam eleman sayısı
+* Sütun Sayısı: Bir satırda bulunan toplam eleman sayısı
 
-Eleman Boyutu: Veri tipinin byte cinsinden büyüklüğü (int için genellikle 4 byte)
+* Eleman Boyutu: Veri tipinin byte cinsinden büyüklüğü (int için genellikle 4 byte)
+
+...
 
 🚀 Öne Çıkan Özellikler
 
-Klasik İndeksleme Yok:
-Hedef elemana erişimde A[i][j] kullanılmamıştır.
+ * Klasik İndeksleme Yok:
+  Hedef elemana erişimde A[i][j] kullanılmamıştır.
 
-Pointer Aritmetiği:
-Adres hesaplamaları unsigned char* üzerinden byte seviyesinde yapılmıştır.
+ * Pointer Aritmetiği:
+  Adres hesaplamaları unsigned char* üzerinden byte seviyesinde yapılmıştır.
 
-Dinamik Kullanıcı Girişi:
-Kullanıcı çalışma anında (runtime) erişilecek i ve j değerlerini belirleyebilir.
+ * Dinamik Kullanıcı Girişi:
+  Kullanıcı çalışma anında (runtime) erişilecek i ve j değerlerini belirleyebilir.
 
-Doğrudan Bellek Erişimi:
-Hesaplanan adres üzerinden veri okunur ve güncellenir.
+ * Doğrudan Bellek Erişimi:
+  Hesaplanan adres üzerinden veri okunur ve güncellenir.
 
-Hata Yönetimi:
-Geçersiz indis girişlerine karşı sınır kontrolü yapılmıştır.
+ * Hata Yönetimi:
+  Geçersiz indis girişlerine karşı sınır kontrolü yapılmıştır.
 
-Görselleştirme:
-Güncelleme öncesi ve sonrası matris konsolda gösterilir.
+ * Görselleştirme:
+  Güncelleme öncesi ve sonrası matris konsolda gösterilir.
+
+...
 
 🛠️ Kurulum ve Çalıştırma
 
-odev.c dosyasını bir C derleyicisi (GCC, Visual Studio vb.) ile açın.
+1. odev.c dosyasını bir C derleyicisi (GCC, Visual Studio vb.) ile açın.
 
-Programı derleyip çalıştırın.
+2. Programı derleyip çalıştırın.
 
-Konsolda:
+3. Konsolda:
 
-Mevcut matrisi,
+  * Mevcut matrisi,
 
-Seçilen elemanın hesaplanan bellek adresini,
+  * Seçilen elemanın hesaplanan bellek adresini,
 
-O adresteki değeri,
+  * O adresteki değeri,
 
-Güncelleme sonrası matrisin yeni halini görebilirsiniz.
+  * Güncelleme sonrası matrisin yeni halini görebilirsiniz.
 
+...
+    
 📋 Örnek Konsol Çıktısı
+
 <img width="%100" alt="image" src="https://github.com/user-attachments/assets/5a5eab1f-0eb5-49bf-a242-f44dacc6d003" />
 
 
