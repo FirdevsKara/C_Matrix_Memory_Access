@@ -5,7 +5,7 @@ Bu proje, C programlama dilinde iki boyutlu bir matrisin elemanlarına klasik A[
 
 Projenin temel odağı, yüksek seviyeli dil soyutlamalarını bir kenara bırakarak bilgisayarın bellekte verileri satır-öncelikli (row-major) düzende nasıl sakladığını anlamaktır.
 
-...
+---
 
 📌 Projenin Amacı
 
@@ -22,7 +22,7 @@ Bu projede, iki boyutlu bir veri yapısının bellekteki fiziksel yerleşimi:
 
 kullanılarak pointer aritmetiği ile hesaplanmıştır.
 
-...
+---
 
 🧮 Adres Hesaplama (Row-Major Order)
 
@@ -42,7 +42,7 @@ Açıklamalar:
 
 * Eleman Boyutu: Veri tipinin byte cinsinden büyüklüğü (int için genellikle 4 byte)
 
-...
+---
 
 🚀 Öne Çıkan Özellikler
 
@@ -64,7 +64,7 @@ Açıklamalar:
  * Görselleştirme:
   Güncelleme öncesi ve sonrası matris konsolda gösterilir.
 
-...
+---
 
 🛠️ Kurulum ve Çalıştırma
 
@@ -82,12 +82,14 @@ Açıklamalar:
 
   * Güncelleme sonrası matrisin yeni halini görebilirsiniz.
 
-...
+---
     
 📋 Örnek Konsol Çıktısı
 
 <img width="%100" alt="image" src="https://github.com/user-attachments/assets/5a5eab1f-0eb5-49bf-a242-f44dacc6d003" />
 
 
+
+---
 
 Developed by Firdevs Kara | Computer Engineering Student 💻
